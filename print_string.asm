@@ -15,7 +15,7 @@ _start:
         mov rax, 60
         mov rdi, 0
         syscall
-        
+
 
 ;input: rax
 ;output: print string at rax
@@ -35,3 +35,5 @@ _printLoop:
         mov rdi, 1
         pop rsi
         mov rdx, rbx
+        syscall
+        ret
