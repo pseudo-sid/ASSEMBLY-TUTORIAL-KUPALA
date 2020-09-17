@@ -1,6 +1,6 @@
 section  .data
          text1 db "What is your name? "
-         text2 db "\nHello, "
+         text2 db "Hello, "
 
 section  .bss
          name resb 16
@@ -29,7 +29,7 @@ _printtext1:
          mov rax, 1
          mov rdi, 1
          mov rsi, text1
-         mov rdx, 20
+         mov rdx, 19
          syscall
          ret
 _printtext2:
